@@ -14,10 +14,7 @@ class Triangle
       :isosceles if (@side1 == @side2 || @side2 == @side3 || @side1 == @side3) && ((@side1 == @side2 && @side1 == @side3) == false)
       :scalene if (@side1 == @side2 || @side2 == @side3 || @side1 == @side3) == false
     else
-      begin
         raise TriangleError
-      rescue TriangleError
-      end
     end
   end
   
